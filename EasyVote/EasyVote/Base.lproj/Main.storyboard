@@ -78,19 +78,31 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KF0-9M-V96">
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Share on Facebook">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="facebookBtnWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bNM-1E-Gnc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="AdW-C7-wnF" secondAttribute="trailing" id="F5H-d7-lJ3"/>
                             <constraint firstItem="AdW-C7-wnF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ZTV-ZR-DV9"/>
+                            <constraint firstItem="KF0-9M-V96" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="b4k-RX-04d"/>
                             <constraint firstItem="AdW-C7-wnF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="fcy-mq-hCu"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KF0-9M-V96" secondAttribute="bottom" constant="10" id="hdC-0g-aTN"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Easy Vote" id="XfJ-ts-6Xd"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1931.8840579710147" y="122.28260869565219"/>
+            <point key="canvasLocation" x="1930.4000000000001" y="121.88905547226388"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="gmi-lW-AzB">
@@ -147,7 +159,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OIf-Dq-LaP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2682" y="122"/>
+            <point key="canvasLocation" x="2680.8000000000002" y="121.88905547226388"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="21n-ks-8hj">
@@ -161,8 +173,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Lhf-yX-dyy">
-                                <frame key="frameInset" minX="15" minY="72" width="346" height="102"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Lhf-yX-dyy">
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2. Request a mail-in ballot" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sce-gK-ghs">
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
@@ -216,7 +227,8 @@
                                         <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you cannot vote by mail, then vote in person at your polling place on election day." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n0i-km-Dhb">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n0i-km-Dhb">
+                                        <string key="text">Follow the instructions on your ballot and return it by the specified deadline.  If you cannot vote by mail, then vote in person at your polling place on election day.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -240,9 +252,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="MI1-xR-6GT" secondAttribute="trailing" constant="5" id="99J-2y-spI"/>
+                            <constraint firstItem="MI1-xR-6GT" firstAttribute="leading" secondItem="q1R-bK-3zV" secondAttribute="leading" constant="5" id="KJ8-Mz-wn9"/>
                             <constraint firstItem="MI1-xR-6GT" firstAttribute="top" secondItem="bkE-1z-szG" secondAttribute="bottom" constant="8" id="MXF-qb-Ova"/>
-                            <constraint firstItem="MI1-xR-6GT" firstAttribute="leading" secondItem="q1R-bK-3zV" secondAttribute="leading" id="igL-sh-HKA"/>
-                            <constraint firstAttribute="trailing" secondItem="MI1-xR-6GT" secondAttribute="trailing" id="kZt-vF-lNI"/>
                             <constraint firstItem="MI1-xR-6GT" firstAttribute="centerX" secondItem="q1R-bK-3zV" secondAttribute="centerX" id="znl-as-Dsz"/>
                         </constraints>
                     </view>
