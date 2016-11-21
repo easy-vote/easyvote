@@ -1,4 +1,4 @@
-//
+
 //  ViewController.swift
 //  EasyVote
 //
@@ -22,4 +22,4 @@ class ViewController: UIViewController {
 
 
 }
-
+  
